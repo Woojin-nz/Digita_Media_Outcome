@@ -1,0 +1,49 @@
+/* only affects bullet points in navigation */
+ul, .dropdown {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /* Change items from horizontal to vertical */
+    display: flex;
+    
+    /* background: #6bc4ff; */
+
+}
+
+ul li {
+    width: 100%;
+    position: relative;
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+
+    /* Limits dropdown to width of parent li */
+    width: 100%;
+    flex-wrap: wrap;
+    visibility: hidden;
+    transition: 0.3s;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(233,205,228);
+}
+
+ul li:hover .dropdown{
+    visibility: visible;
+}
+
+.menu-header{
+    /* display:none; */
+    display: block;
+}
+
+.fa-bars{
+    display: none;
+}
