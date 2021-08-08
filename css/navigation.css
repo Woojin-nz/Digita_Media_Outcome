@@ -47,3 +47,53 @@ ul li:hover .dropdown{
 .fa-bars{
     display: none;
 }
+
+@media(max-width: 767px){
+
+    ul{
+        display:table;
+        width:100%;
+      }
+
+        ul li{
+        text-align: left;
+        }
+
+    .dropdown {
+    position: relative;
+    padding-left: 20px;
+    width: auto;
+    left: 0;
+    top: 0;
+    transition: none;
+    visibility: none;
+    display: none;
+    z-index: 1;
+
+    }
+    .display{
+        display:block;
+
+     }
+
+    .menu-content {
+    display:none;
+    }
+
+    .menu-header {
+        text-align: right;
+        padding: 10px;
+        display: block;
+     }
+
+     .fa-bars{
+        color: orange;
+        display: inline;
+        border: 1px solid rgb(126,126,126);
+        padding: 5px 10px;
+        border-radius: 3px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+     }
+}

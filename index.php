@@ -66,9 +66,24 @@
        
 
         <div class="box footer">
-            CC yourname 20XX
+            CC Woo-Jin Jeon 2021
         </div>    <!-- / footer -->
     
     </div>  <!-- / wrapper  -->
     
+<script>
+    $('.dropbtn').click(function()
+        {
+            $('.dropdown').toggleClass('display');
+        }
+    )
+
+    //Make navigation clickable
+    $('.fa-bars').click(function()
+    {
+        $('.menu-content').toggle();
+    })
+</script>
+
+
 </body>        
