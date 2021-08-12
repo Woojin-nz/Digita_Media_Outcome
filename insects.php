@@ -7,44 +7,7 @@
 
 <?php
     
-    $dirname = "images/insects/";
-    $images = glob($dirname."*.jpg");
-
-    foreach($images as $images) {
-
-        $exif = exif_read_data($images, 0, true);
-
-        foreach ($exif as $key => $section) {
-            foreach ($section as $name => $val) {
-
-                if($key == 'IFDO' and $name == "Title") {
-
-                    $val = preg_replace('/[^A-Za-z0-9\- ()]/', '', $val);
-
-                    $title = $val;
-                }
-            }
-        }
-
-        ?>
-        
-    <div class="responsive-gallery">
-
-    <div class="gallery">
-
-    <a href="<?php echo $images; ?>" class="big">
-        <img src ="<?php echo $images; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>" />
-    </a>
-
-</div>
-
-</div>
-
-        <?php   
-
-
-    }
-
+    make_gallery("insects");
 ?>
 
 
