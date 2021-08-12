@@ -16,6 +16,8 @@
     
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/simple-lightbox.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
     <link rel="stylesheet" href="css/layout.css"> 
@@ -98,6 +100,16 @@
     {
         $('.menu-content').toggle();
     })
+</script>
+
+<script src="js/simple-lightbox.min.js"></script>
+
+<script>
+    (function() {
+        var $gallery = new SimpleLightbox('.gallery a', {});
+    })();
+
+</script>
 </script>
 
 
