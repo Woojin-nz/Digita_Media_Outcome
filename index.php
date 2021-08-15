@@ -25,6 +25,7 @@
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
     <link rel="stylesheet" href="css/layout.css"> 
     <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/form.css" />
 
     <!-- Link to JQuery -->
     <script src="js/j_query_min.js"></script>
@@ -63,7 +64,7 @@
                     </li>
                     <li><a class="nav" href="#">About</a></li>
                     <li><a class="nav" href="index.php?page=links">Links</a></li>
-                    <li><a class="nav" href="#">Contact</a></li>
+                    <li><a class="nav" href="index.php?page=contact">Contact</a></li>
                 </ul>
             </div>
 
